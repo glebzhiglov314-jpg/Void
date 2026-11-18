@@ -1,0 +1,122 @@
+/* Основные настройки */
+body {
+    background-color: #1a1a1a;
+    color: #d4d4d4;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Переменные для акцентов (можно менять цвет тут) */
+:root {
+    --neon-cyan: #00e5ff;
+    --neon-green: #00ff66;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px dashed #444;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 1.1em;
+}
+
+h2 {
+    color: #a0a0a0;
+    border-left: 4px solid #555;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+a {
+    color: #8888ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Визуальные акценты */
+.accent-text {
+    color: var(--neon-cyan);
+    font-weight: bold;
+}
+
+.accent-green {
+    color: var(--neon-green);
+    font-weight: bold;
+}
+
+.accent-box {
+    border-left: 4px solid var(--neon-cyan);
+    background-color: #222;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.accent-box p {
+    margin: 0;
+}
+
+/* Плашки для услуг */
+.tag {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: var(--neon-cyan);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    margin-right: 8px;
+    border: 1px solid #444;
+}
+
+/* Списки */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 2px solid #444;
+    transition: border-color 0.3s;
+}
+
+li:hover {
+    border-left-color: var(--neon-cyan);
+}
+
+/* Убираем полоски у контактов */
+.contact-list li {
+    border-left: none;
+    padding-left: 0;
+}
+
+em {
+    color: #888;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #666;
+    border-top: 2px dashed #444;
+    padding-top: 20px;
+}
